@@ -1,5 +1,5 @@
 ### Personal Additions : 
-- New setting added for CodeForces : Cph › General: Use Full Code Forces Name
+- New setting added for CodeForces : Cph › General: Use Full Code Forces Name. Directly saves problem name like (144C- Some Problem Name). Beware of whitespace characters in filename though.
 
 # Competitive Programming Helper (cph)
 
