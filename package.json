@@ -1,6 +1,6 @@
 {
-    "name": "competitive-programming-helper",
-    "displayName": "Competitive Programming Helper (cph)",
+    "name": "2competitive-programming-helper",
+    "displayName": "2Competitive Programming Helper (cph)",
     "description": "Makes judging, compiling, and downloading problems for competitve programming easy. Also supports auto-submit for a few sites.",
     "license": "GPL-3.0-or-later",
     "icon": "icon.png",
@@ -294,6 +294,11 @@
                     "type": "string",
                     "default": "cpp java js python c rust ruby",
                     "description": "Space separated languages, in top to bottom order, shown in menu when a problem is imported via Competitive Companion. Example 'java python' would show java on top, followed by python."
+                },
+                "cph.general.useFullCodeForcesName": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "like 144C - Name Of Problem"
                 },
                 "cph.general.useShortCodeForcesName": {
                     "type": "boolean",

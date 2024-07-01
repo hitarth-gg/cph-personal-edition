@@ -470,7 +470,7 @@ function Judge(props: {
                 <br />
                 <br />
                 <div>
-                    <small>
+                    {/* <small>
                         <a
                             href={payPalUrl}
                             className="btn btn-pink"
@@ -479,13 +479,13 @@ function Judge(props: {
                             <i className="codicon codicon-heart-filled"></i>{' '}
                             Support
                         </a>
-                    </small>
-                    <small>
+                    </small> */}
+                    {/* <small>
                         <a href="https://rb.gy/vw82u5" className="btn">
                             <i className="codicon codicon-feedback"></i>{' '}
                             Feedback
                         </a>
-                    </small>
+                    </small> */}
                 </div>
                 <div className="remote-message">
                     <p>{remoteMessage}</p>
@@ -525,7 +525,7 @@ function Judge(props: {
                         </span>{' '}
                         <span className="action-text">Stop</span>
                     </button>
-                    <button
+                    {/* <button
                         className="btn"
                         title="Help"
                         onClick={() =>
@@ -539,7 +539,7 @@ function Judge(props: {
                             <i className="codicon codicon-question"></i>
                         </span>{' '}
                         <span className="action-text">Help</span>
-                    </button>
+                    </button> */}
                     <button
                         className="btn btn-red right"
                         onClick={deleteTcs}

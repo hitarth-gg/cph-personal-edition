@@ -12,6 +12,7 @@ import {
     useShortCodeForcesName,
     getMenuChoices,
     getDefaultLanguageTemplateFileLocation,
+    useFullCodeForcesName,
 } from './preferences';
 import { getProblemName } from './submit';
 import { spawn } from 'child_process';
@@ -148,7 +149,17 @@ export const setupCompanionServer = () => {
 };
 
 export const getProblemFileName = (problem: Problem, ext: string) => {
-    if (isCodeforcesUrl(new URL(problem.url)) && useShortCodeForcesName()) {
+    if (isCodeforcesUrl(new URL(problem.url)) && useFullCodeForcesName()) {
+        const wordSplit = problem.name.split('.');
+        const words = words_in_text(wordSplit[wordSplit.length - 1]);
+        const secondPart = words?.join(' ');
+        const firstPart = getProblemName(problem.url);
+        const name = `${firstPart} - ${secondPart}.${ext}`;
+        return name;
+    } else if (
+        isCodeforcesUrl(new URL(problem.url)) &&
+        useShortCodeForcesName()
+    ) {
         return `${getProblemName(problem.url)}.${ext}`;
     } else {
         console.log(

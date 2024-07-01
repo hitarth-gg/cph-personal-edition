@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
 * {
     -webkit-touch-callout: none;
     /* iOS Safari */
@@ -37,6 +40,7 @@ body {
     margin: 0 auto;
     padding: 0px;
     max-width: 800px;
+    font-family: 'Space Mono', Courier, monospace;
 }
 
 .oj {
@@ -116,13 +120,16 @@ a[href]:hover {
 pre,
 textarea {
     background: var(--input-background);
-    font-family: Consolas, 'Ubuntu Mono', monospace;
+    /* font-family: Consolas, 'Ubuntu Mono', monospace; */
+    font-family: 'fira code', Consolas, 'Ubuntu Mono', monospace;
     width: 100%;
     display: block;
     background: rgba(0, 0, 0, 0.2);
     outline: none !important;
     border: 0px;
-    color: bisque;
+    /* color: bisque; */
+    color: #e6e5e5;
+    font-size: small;
     max-width: 100%;
     max-height: 250px !important;
     overflow-y: auto;
@@ -130,6 +137,11 @@ textarea {
     border: 1px solid var(--input-background);
     margin-bottom: 4px;
 }
+
+.highlighted {
+    background-color: yellow;
+}
+
 
 pre,
 code {
@@ -399,6 +411,7 @@ button:disabled {
 }
 
 .textarea-container {
+    color: bisque;
     position: relative;
 }
 
